@@ -24,7 +24,7 @@ io.on('connection', (socket) => {
     // Function to run Python script
     function runPythonScript() {
         try {
-            pyshell = new PythonShell('script.py'); // Change 'script.py' to your file's name
+            pyshell = new PythonShell('run.py');
 
             // Listen for incoming commands from the client
             socket.on('command_entered', (command) => {
