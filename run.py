@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 class ExpenseTracker:
     def __init__(self):
-        self.data_file="../expenses.json"
+        self.data_file=os.path.join(os.getcwd(), 'expenses.json')
         self.expenses = []
         self.load_data()    
         
